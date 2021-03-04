@@ -1,16 +1,16 @@
 <template>
 	<div class="mainPage">
 		<router-view></router-view>
-		<startComponent />
+		<map-component />
 	</div>
 </template>
 
 <script>
-	import startComponent from "../components/startComponent.vue"
+	import mapComponent from "../components/mapComponent.vue"
 
 	export default {
-		name: "startPage",
-		components: { startComponent },
+		name: "mapPage",
+		components: { mapComponent },
 	}
 </script>
 

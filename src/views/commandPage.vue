@@ -1,16 +1,16 @@
 <template>
 	<div class="mainPage">
 		<router-view></router-view>
-		<startComponent />
+		<command-component />
 	</div>
 </template>
 
 <script>
-	import startComponent from "../components/startComponent.vue"
+	import commandComponent from "../components/commandComponent.vue"
 
 	export default {
-		name: "startPage",
-		components: { startComponent },
+		name: "commandPage",
+		components: { commandComponent },
 	}
 </script>
 

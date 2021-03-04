@@ -1,7 +1,11 @@
 <template>
 	<div class="container">
 		<div class="startComponent">
-			<p class="startComponent__title">SPBBASKET</p>
+			<p class="startComponent__title">
+				<router-link :to="{ path: '/home' }" class="startComponent__title__link"
+					><p>SPBBASKET</p></router-link
+				>
+			</p>
 
 			<div class="startComponent__container" @submit.prevent="submitForm">
 				<v-form ref="form" class="startComponent__form">
@@ -225,12 +229,19 @@
 		}
 
 		&__title {
+			cursor: pointer;
 			position: absolute;
 			right: 100px;
 			top: 150px;
 			font-size: 40px;
 			font-family: "Bebas Neue", cursive;
 			opacity: 0.8;
+			&__link {
+				text-decoration: none;
+				background-color: none;
+				outline: none;
+				color: #6b778c;
+			}
 		}
 		&__container {
 			display: flex;

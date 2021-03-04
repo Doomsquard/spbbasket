@@ -1,16 +1,16 @@
 <template>
 	<div class="mainPage">
 		<router-view></router-view>
-		<startComponent />
+		<news-component />
 	</div>
 </template>
 
 <script>
-	import startComponent from "../components/startComponent.vue"
+	import NewsComponent from "../components/newsComponent.vue"
 
 	export default {
-		name: "startPage",
-		components: { startComponent },
+		name: "newsPage",
+		components: { NewsComponent },
 	}
 </script>
 

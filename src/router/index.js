@@ -2,28 +2,65 @@ import Vue from "vue"
 import VueRouter from "vue-router"
 import startPage from "../views/startPage.vue"
 import signPage from "../views/signPage"
+import newsPage from "../views/newsPage"
+import statisticPage from "../views/statisticPage"
+import mapPage from "../views/mapPage"
+import commandPage from "../views/commandPage"
+import profilePage from "../views/profilePage"
+
+import header from "../components/headerComponent"
 
 Vue.use(VueRouter)
 
+const headerComponent = (name) => {
+	return { path: "", name: name, component: (resolve) => resolve(header) }
+}
+
 const routes = [
 	{
-		path: "/",
-		name: "startPage",
+		path: "/home",
 		component: startPage,
+		children: [headerComponent("headerHome")],
 	},
 	{
 		path: "/signin",
 		name: "signin",
 		component: signPage,
-		// // route level code-splitting
-		// // this generates a separate chunk (about.[hash].js) for this route
-		// // which is lazy-loaded when the route is visited.
-		// component: () => import(/* webpackChunkName: "about" */ "../views/About.vue"),
 	},
 	{
 		path: "/signup",
 		name: "signup",
 		component: signPage,
+	},
+	{
+		path: "/news",
+		component: newsPage,
+		children: [headerComponent("headerNews")],
+	},
+	{
+		path: "/stats",
+		component: statisticPage,
+		children: [headerComponent("headerStats")],
+	},
+	{
+		path: "/map",
+		component: mapPage,
+		children: [headerComponent("headerMap")],
+	},
+	{
+		path: "/command",
+		component: commandPage,
+		children: [headerComponent("headerCommand")],
+	},
+	{
+		path: "/profile",
+		component: profilePage,
+		children: [headerComponent("headerProfile")],
+	},
+
+	{
+		path: "*",
+		redirect: { path: "/home" },
 	},
 ]
 

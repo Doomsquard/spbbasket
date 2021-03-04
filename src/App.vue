@@ -8,5 +8,6 @@
 	#app {
 		-webkit-font-smoothing: antialiased;
 		-moz-osx-font-smoothing: grayscale;
+		max-height: 90vh;
 	}
 </style>

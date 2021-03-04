@@ -1,17 +1,17 @@
 <template>
-	<main class="startComponent">
-		startComponent
+	<main class="statisticComponent">
+		statisticComponent
 	</main>
 </template>
 
 <script>
 	export default {
-		name: "startComponent",
+		name: "statisticComponent",
 	}
 </script>
 
 <style lang="scss" scoped>
-	.startComponent {
+	.statisticComponent {
 		display: flex;
 		flex: 1 0 auto;
 		max-height: 100vh;

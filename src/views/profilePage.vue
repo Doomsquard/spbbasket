@@ -1,16 +1,16 @@
 <template>
 	<div class="mainPage">
 		<router-view></router-view>
-		<startComponent />
+		<profile-component />
 	</div>
 </template>
 
 <script>
-	import startComponent from "../components/startComponent.vue"
+	import profileComponent from "../components/profileComponent.vue"
 
 	export default {
-		name: "startPage",
-		components: { startComponent },
+		components: { profileComponent },
+		name: "profilePage",
 	}
 </script>
 
