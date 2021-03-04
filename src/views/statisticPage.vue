@@ -1,16 +1,16 @@
 <template>
 	<div class="mainPage">
 		<router-view></router-view>
-		<startComponent />
+		<statistic-component />
 	</div>
 </template>
 
 <script>
-	import startComponent from "../components/startComponent.vue"
+	import StatisticComponent from "../components/statisticComponent.vue"
 
 	export default {
-		name: "startPage",
-		components: { startComponent },
+		name: "statisticPage",
+		components: { StatisticComponent },
 	}
 </script>
 

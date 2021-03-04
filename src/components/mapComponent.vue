@@ -1,17 +1,17 @@
 <template>
-	<main class="startComponent">
-		startComponent
+	<main class="mapComponent">
+		mapComponent
 	</main>
 </template>
 
 <script>
 	export default {
-		name: "startComponent",
+		name: "mapComponent",
 	}
 </script>
 
 <style lang="scss" scoped>
-	.startComponent {
+	.mapComponent {
 		display: flex;
 		flex: 1 0 auto;
 		max-height: 100vh;
